@@ -49,7 +49,7 @@ To summarize, policy iteration iteratively improves the policy by alternating be
 ## POLICY IMPROVEMENT FUNCTION
 ### Name : POOJA A
 ### Register Number: 212222240072
-```
+```python
 def policy_improvement(V, P, gamma=1.0):
     Q = np.zeros((len(P), len(P[0])), dtype=np.float64)
     # Write your code here to implement policy improvement algorithm
@@ -63,7 +63,7 @@ def policy_improvement(V, P, gamma=1.0):
 ```
 
 ## POLICY ITERATION FUNCTION
-```
+```python
 def policy_iteration(P, gamma=1.0,theta=1e-10):
   random_actions=np.random.choice(tuple(P[0].keys()),len(P))
   pi = lambda s: {s:a for s, a in enumerate(random_actions)}[s]
@@ -77,7 +77,14 @@ def policy_iteration(P, gamma=1.0,theta=1e-10):
 ```
 
 ## OUTPUT:
-Mention the optimal policy, optimal value function , success rate for the optimal policy.
+### optimal policy 
+![image](https://github.com/user-attachments/assets/9967db5f-5a22-4a5e-b0c8-5a83bded4e49)
+
+### optimal value function
+![image](https://github.com/user-attachments/assets/38331d56-2c9f-4a36-9901-80b266bd55eb)
+
+### success rate for the optimal policy.
+![image](https://github.com/user-attachments/assets/c55fe403-004c-431c-bbb1-f00b939638f2)
 
 ## RESULT:
 Thus, Python program is developed to find the optimal policy for the given MDP using the policy iteration algorithm.
